@@ -3,6 +3,7 @@ import "./SearchBar.css";
 //@ts-ignore
 export const SearchBar = ({ onSearch }) => {
   const [term, setTerm] = useState("");
+
   function handleClick(e: any) {
     e.preventDefault();
     onSearch(term);
